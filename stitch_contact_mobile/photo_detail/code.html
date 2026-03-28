@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-primary": "#ffffff",
+              "outline-variant": "#adb3b4",
+              "tertiary-container": "#d0ecff",
+              "surface": "#f9f9f9",
+              "surface-container-high": "#e4e9ea",
+              "surface-container": "#ebeeef",
+              "inverse-surface": "#0c0f0f",
+              "surface-tint": "#5f5e5e",
+              "tertiary-fixed-dim": "#c2def0",
+              "on-tertiary-fixed": "#2c4655",
+              "on-secondary-fixed": "#3c4044",
+              "surface-container-low": "#f2f4f4",
+              "on-secondary-fixed-variant": "#585c61",
+              "on-error-container": "#752121",
+              "error-dim": "#4e0309",
+              "surface-variant": "#dde4e5",
+              "on-error": "#fff7f6",
+              "tertiary-fixed": "#d0ecff",
+              "on-surface": "#2d3435",
+              "outline": "#757c7d",
+              "secondary-dim": "#4f5358",
+              "surface-container-highest": "#dde4e5",
+              "primary": "#5f5e5e",
+              "primary-container": "#e5e2e1",
+              "secondary-container": "#dfe3e8",
+              "on-tertiary-fixed-variant": "#486272",
+              "inverse-on-surface": "#9c9d9d",
+              "error-container": "#fe8983",
+              "on-primary": "#faf7f6",
+              "on-tertiary-container": "#3e5868",
+              "secondary-fixed-dim": "#d1d5da",
+              "on-secondary-container": "#4e5257",
+              "primary-fixed-dim": "#d6d4d3",
+              "secondary-fixed": "#dfe3e8",
+              "on-primary-fixed": "#403f3f",
+              "on-primary-fixed-variant": "#5c5b5b",
+              "background": "#f9f9f9",
+              "on-surface-variant": "#5a6061",
+              "tertiary-dim": "#3c5666",
+              "error": "#9f403d",
+              "surface-bright": "#f9f9f9",
+              "on-primary-container": "#525151",
+              "primary-fixed": "#e5e2e1",
+              "surface-dim": "#d4dbdd",
+              "secondary": "#5b5f64",
+              "primary-dim": "#535252",
+              "on-background": "#2d3435",
+              "on-tertiary": "#f4faff",
+              "tertiary": "#486272",
+              "on-secondary": "#f6f9ff",
+              "surface-container-lowest": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #f9f9f9; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24; }
+        .text-display-lg { font-family: 'Noto Serif', serif; font-size: clamp(3rem, 8vw, 6rem); line-height: 1; letter-spacing: -0.02em; }
+        .text-label-sm { font-family: 'Manrope', sans-serif; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; }
+        .glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 h-20 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-xl">
+<div class="flex items-center gap-4">
+<button class="text-zinc-800 dark:text-zinc-200 hover:opacity-60 transition-opacity duration-300 Active: scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-xl font-serif tracking-[0.2em] text-zinc-900 dark:text-zinc-100 uppercase">GALLERY</h1>
+</div>
+<nav class="hidden md:flex gap-12 items-center">
+<a class="font-serif italic tracking-tight text-zinc-900 dark:text-zinc-100 font-medium hover:opacity-60 transition-opacity duration-300" href="#">Portraits</a>
+<a class="font-serif italic tracking-tight text-zinc-500 dark:text-zinc-400 hover:opacity-60 transition-opacity duration-300" href="#">Street</a>
+<a class="font-serif italic tracking-tight text-zinc-500 dark:text-zinc-400 hover:opacity-60 transition-opacity duration-300" href="#">Architecture</a>
+</nav>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-zinc-800" data-icon="search">search</span>
+<span class="material-symbols-outlined text-zinc-800" data-icon="shopping_bag">shopping_bag</span>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section: Single Vibrant Photo -->
+<section class="relative w-full min-h-[795px] flex flex-col items-center justify-center p-8 md:p-16">
+<div class="w-full h-full max-w-7xl mx-auto overflow-hidden group">
+<img alt="Vibrant Shibuya crossing neon lights at night" class="w-full h-[707px] object-cover transition-transform duration-700 hover:scale-105" data-alt="cinematic shot of shibuya crossing at night with vibrant neon signs in pink and teal reflected on wet asphalt after rain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo06YxnW5Alpzye36m1R7woZsJHr15E0v7PVB4hNepGM3ScYIqA9R-0hDdqsBXDUnZ3FNkYUv5da_4W_yPCTgA6kZgjh99mqBbOjvgtLM3PbwccoLlaQyDBWhy-8ASBcixQtt4H1JobT8sDFTvu5JqtVt3ldDZ6OvXTixcAqHBvLcQMrvIQ53frGOGzkYGEWqZ3_hPeMOKj7MhkrDGOFHWsEWanlJhd-J3eGIqD4uD0_oPnDQoqaLW5ETWKwF_JR3p80fnc0xpJcU"/>
+</div>
+<!-- Metadata Floating Tag -->
+<div class="absolute bottom-24 right-12 md:right-24 bg-surface-container-lowest/90 backdrop-blur-md px-6 py-4 flex flex-col gap-1 border-none shadow-sm">
+<span class="text-label-sm text-on-surface-variant">001 / SERIES</span>
+<h2 class="font-headline italic text-2xl text-on-surface">Electric Midnight</h2>
+</div>
+</section>
+<!-- Details Section -->
+<section class="max-w-7xl mx-auto px-8 py-24 grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+<div class="md:col-span-4 flex flex-col gap-12">
+<div>
+<h3 class="text-label-sm text-outline mb-4">Location</h3>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<p class="font-body text-lg text-on-surface">Shibuya, Tokyo, Japan</p>
+</div>
+</div>
+<div>
+<h3 class="text-label-sm text-outline mb-4">Equipment</h3>
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="photo_camera">photo_camera</span>
+<p class="font-body text-lg text-on-surface">Leica M11</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="lens">lens</span>
+<p class="font-body text-on-surface-variant">Summilux-M 35mm f/1.4 ASPH</p>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-8 flex flex-col gap-16">
+<!-- Technical Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-8 bg-surface-container-low p-10">
+<div class="flex flex-col gap-1">
+<span class="text-label-sm text-outline">Aperture</span>
+<span class="font-headline text-3xl italic">f/2.8</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-label-sm text-outline">Shutter</span>
+<span class="font-headline text-3xl italic">1/250s</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-label-sm text-outline">ISO</span>
+<span class="font-headline text-3xl italic">400</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-label-sm text-outline">Exposure</span>
+<span class="font-headline text-3xl italic">-0.3ev</span>
+</div>
+</div>
+<div class="flex flex-col gap-6 max-w-2xl">
+<p class="font-headline text-2xl leading-relaxed text-on-surface">
+                        "The intersection is a pulse. Caught between the cyan of the billboards and the deep magenta of the rain-slicked pavement, the city feels like a living, breathing machine."
+                    </p>
+<p class="font-body text-on-surface-variant leading-loose">
+                        Captured during a late-night walk through Tokyo's busiest district. The goal was to isolate the movement of light rather than the people. The Leica M11’s sensor preserves every chromatic nuance of the neon signs without losing detail in the deepest shadows of the alleyways.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Navigation Section -->
+<section class="w-full border-t border-surface-container-high py-20 px-8">
+<div class="max-w-7xl mx-auto flex justify-between items-center">
+<a class="group flex items-center gap-4 transition-all duration-300" href="#">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</div>
+<div class="hidden sm:flex flex-col">
+<span class="text-label-sm text-outline group-hover:text-primary">Previous</span>
+<span class="font-headline italic text-lg">Ginza Shadows</span>
+</div>
+</a>
+<div class="h-1 w-24 bg-surface-container-highest"></div>
+<a class="group flex items-center gap-4 text-right transition-all duration-300" href="#">
+<div class="hidden sm:flex flex-col">
+<span class="text-label-sm text-outline group-hover:text-primary">Next</span>
+<span class="font-headline italic text-lg">Harajuku Colors</span>
+</div>
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 flex flex-col md:flex-row justify-between items-center gap-8 bg-zinc-100 dark:bg-zinc-900">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="font-sans text-[10px] tracking-widest uppercase text-zinc-600 dark:text-zinc-400">© 2024 PHOTOGRAPHER NAME</span>
+<span class="text-[9px] text-outline-variant tracking-widest uppercase">London • Tokyo • New York</span>
+</div>
+<div class="flex gap-12">
+<a class="font-sans text-[10px] tracking-widest uppercase text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-300" href="#">Instagram</a>
+<a class="font-sans text-[10px] tracking-widest uppercase text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-300" href="#">Twitter</a>
+<a class="font-sans text-[10px] tracking-widest uppercase text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-300" href="#">Are.na</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
+<span class="font-sans text-[10px] tracking-widest uppercase text-zinc-600 dark:text-zinc-400">Available for commissions</span>
+</div>
+</footer>
+</body></html>

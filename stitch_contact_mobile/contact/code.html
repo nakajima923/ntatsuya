@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-primary": "#ffffff",
+              "outline-variant": "#adb3b4",
+              "tertiary-container": "#d0ecff",
+              "surface": "#f9f9f9",
+              "surface-container-high": "#e4e9ea",
+              "surface-container": "#ebeeef",
+              "inverse-surface": "#0c0f0f",
+              "surface-tint": "#5f5e5e",
+              "tertiary-fixed-dim": "#c2def0",
+              "on-tertiary-fixed": "#2c4655",
+              "on-secondary-fixed": "#3c4044",
+              "surface-container-low": "#f2f4f4",
+              "on-secondary-fixed-variant": "#585c61",
+              "on-error-container": "#752121",
+              "error-dim": "#4e0309",
+              "surface-variant": "#dde4e5",
+              "on-error": "#fff7f6",
+              "tertiary-fixed": "#d0ecff",
+              "on-surface": "#2d3435",
+              "outline": "#757c7d",
+              "secondary-dim": "#4f5358",
+              "surface-container-highest": "#dde4e5",
+              "primary": "#5f5e5e",
+              "primary-container": "#e5e2e1",
+              "secondary-container": "#dfe3e8",
+              "on-tertiary-fixed-variant": "#486272",
+              "inverse-on-surface": "#9c9d9d",
+              "error-container": "#fe8983",
+              "on-primary": "#faf7f6",
+              "on-tertiary-container": "#3e5868",
+              "secondary-fixed-dim": "#d1d5da",
+              "on-secondary-container": "#4e5257",
+              "primary-fixed-dim": "#d6d4d3",
+              "secondary-fixed": "#dfe3e8",
+              "on-primary-fixed": "#403f3f",
+              "on-primary-fixed-variant": "#5c5b5b",
+              "background": "#f9f9f9",
+              "on-surface-variant": "#5a6061",
+              "tertiary-dim": "#3c5666",
+              "error": "#9f403d",
+              "surface-bright": "#f9f9f9",
+              "on-primary-container": "#525151",
+              "primary-fixed": "#e5e2e1",
+              "surface-dim": "#d4dbdd",
+              "secondary": "#5b5f64",
+              "primary-dim": "#535252",
+              "on-background": "#2d3435",
+              "on-tertiary": "#f4faff",
+              "tertiary": "#486272",
+              "on-secondary": "#f6f9ff",
+              "surface-container-lowest": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface selection:bg-primary/20">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 h-20 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-xl">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-zinc-800 dark:text-zinc-200">menu</span>
+<span class="text-xl font-serif tracking-[0.2em] text-zinc-900 dark:text-zinc-100 uppercase">GALLERY</span>
+</div>
+<nav class="hidden md:flex gap-16">
+<a class="text-zinc-500 dark:text-zinc-400 hover:opacity-60 transition-opacity duration-300 font-label text-[10px] tracking-widest uppercase" href="#">Works</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:opacity-60 transition-opacity duration-300 font-label text-[10px] tracking-widest uppercase" href="#">Archive</a>
+<a class="text-zinc-900 dark:text-zinc-100 font-medium font-label text-[10px] tracking-widest uppercase" href="#">Contact</a>
+</nav>
+</header>
+<main class="pt-40 pb-20 px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-24">
+<!-- Left Column: Editorial Intro -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<h1 class="font-headline italic text-6xl md:text-8xl text-on-surface tracking-tight mb-8">
+                        Get in touch.
+                    </h1>
+<p class="font-body text-lg text-on-surface-variant max-w-md leading-relaxed mb-16">
+                        For inquiries regarding print sales, commercial assignments, or collaborative ventures, please reach out via the form or direct channels.
+                    </p>
+</div>
+<div class="space-y-12">
+<section>
+<span class="font-label text-[10px] tracking-[0.3em] uppercase text-outline mb-4 block">Email</span>
+<a class="font-headline text-2xl hover:text-primary transition-colors border-b border-on-surface/10 pb-1" href="mailto:hello@photographer.com">
+                            hello@photographer.com
+                        </a>
+</section>
+<section>
+<span class="font-label text-[10px] tracking-[0.3em] uppercase text-outline mb-4 block">Studio</span>
+<p class="font-body text-sm leading-relaxed text-on-surface-variant uppercase tracking-wider">
+                            128 Lichtstraße, Ehrenfeld<br/>
+                            50825 Cologne, DE
+                        </p>
+</section>
+</div>
+</div>
+<!-- Right Column: The Form -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-8 md:p-16 relative">
+<!-- Decorative Image Frame (Editorial Touch) -->
+<div class="absolute -top-12 -right-8 w-48 h-64 hidden xl:block bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-80" data-alt="atmospheric black and white portrait of a photographer holding a vintage Leica camera in soft window light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHlUME7TvHCasxbkCcRYlEv0zymGptj8IiKRWDdQmo23bbpcfdjVOTcFLL2rxP8Nw0HxEO4lYLEt63_5IEDMGKqHEZu2TwIJYHOs7F4XZIHGmvSIeMPt0neiCLghASMZA8qV9gNho04h8bHkuKErmm-JKml9uFR-H-IdRAITjhQrh6_C0FEGhf2A0ehcMRVS_II9KHM4ydgweTlVjT_vVhWrdRBuBa90xaikCnNWUN-RaXpxbDlDmMlIDnv3e7BlIWItRAcOkuzCw"/>
+</div>
+<form class="space-y-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="group relative">
+<label class="font-label text-[10px] tracking-[0.2em] uppercase text-outline mb-2 block group-focus-within:text-primary transition-colors" for="name">Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant/20 focus:border-primary focus:ring-0 px-0 py-4 font-body text-on-surface placeholder:text-outline/30 transition-all outline-none" id="name" name="name" placeholder="Your Name" type="text"/>
+</div>
+<div class="group relative">
+<label class="font-label text-[10px] tracking-[0.2em] uppercase text-outline mb-2 block group-focus-within:text-primary transition-colors" for="email">Email</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant/20 focus:border-primary focus:ring-0 px-0 py-4 font-body text-on-surface placeholder:text-outline/30 transition-all outline-none" id="email" name="email" placeholder="example@domain.com" type="email"/>
+</div>
+</div>
+<div class="group relative">
+<label class="font-label text-[10px] tracking-[0.2em] uppercase text-outline mb-2 block group-focus-within:text-primary transition-colors" for="message">Message</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant/20 focus:border-primary focus:ring-0 px-0 py-4 font-body text-on-surface placeholder:text-outline/30 transition-all resize-none outline-none" id="message" name="message" placeholder="Briefly describe your project or inquiry..." rows="4"></textarea>
+</div>
+<div class="pt-8">
+<button class="group relative px-12 py-6 bg-primary text-on-primary font-label text-[10px] tracking-[0.4em] uppercase overflow-hidden transition-all hover:bg-primary-dim active:scale-95" type="submit">
+<span class="relative z-10">Send Message</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</main>
+<!-- Visual Anchor / Background Image Section -->
+<section class="mt-32 w-full h-[530px] overflow-hidden">
+<img class="w-full h-full object-cover grayscale" data-alt="wide cinematic landscape of misty mountains at dawn with muted blue and gray tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-njxSoDR9tMGNuuymRhysXFpkh3CET0VoOg5t6wKlb6fBUpFPmitLJLD40_bmZjoiw7IyL_h57e7_2_08qlFNTC89upv35n2c0hl_cj0MPiFVCKaTCRBwokifTGltLADaAgLHLGXqnCzkFCPSO4nv7GWiUEYxEjvp14ndoEWignU1b7UeDJ0gTquaFVIHm-CSeT7zKzHljcY96ftrl16-7_X6Glc6zcj3YXk5Skev_7626Px8FbmGn4WyjrE-w36ypLuR8VtL1qE"/>
+</section>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 flex flex-col md:flex-row justify-between items-center gap-8 bg-zinc-100 dark:bg-zinc-900 font-sans text-[10px] tracking-widest uppercase">
+<div class="text-zinc-600 dark:text-zinc-400">
+            © 2024 PHOTOGRAPHER NAME
+        </div>
+<div class="flex gap-12">
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-300" href="#">Instagram</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-300" href="#">Twitter</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-300" href="#">Are.na</a>
+</div>
+</footer>
+</body></html>

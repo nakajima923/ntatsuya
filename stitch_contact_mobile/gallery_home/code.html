@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-primary": "#ffffff",
+              "outline-variant": "#adb3b4",
+              "tertiary-container": "#d0ecff",
+              "surface": "#f9f9f9",
+              "surface-container-high": "#e4e9ea",
+              "surface-container": "#ebeeef",
+              "inverse-surface": "#0c0f0f",
+              "surface-tint": "#5f5e5e",
+              "tertiary-fixed-dim": "#c2def0",
+              "on-tertiary-fixed": "#2c4655",
+              "on-secondary-fixed": "#3c4044",
+              "surface-container-low": "#f2f4f4",
+              "on-secondary-fixed-variant": "#585c61",
+              "on-error-container": "#752121",
+              "error-dim": "#4e0309",
+              "surface-variant": "#dde4e5",
+              "on-error": "#fff7f6",
+              "tertiary-fixed": "#d0ecff",
+              "on-surface": "#2d3435",
+              "outline": "#757c7d",
+              "secondary-dim": "#4f5358",
+              "surface-container-highest": "#dde4e5",
+              "primary": "#5f5e5e",
+              "primary-container": "#e5e2e1",
+              "secondary-container": "#dfe3e8",
+              "on-tertiary-fixed-variant": "#486272",
+              "inverse-on-surface": "#9c9d9d",
+              "error-container": "#fe8983",
+              "on-primary": "#faf7f6",
+              "on-tertiary-container": "#3e5868",
+              "secondary-fixed-dim": "#d1d5da",
+              "on-secondary-container": "#4e5257",
+              "primary-fixed-dim": "#d6d4d3",
+              "secondary-fixed": "#dfe3e8",
+              "on-primary-fixed": "#403f3f",
+              "on-primary-fixed-variant": "#5c5b5b",
+              "background": "#f9f9f9",
+              "on-surface-variant": "#5a6061",
+              "tertiary-dim": "#3c5666",
+              "error": "#9f403d",
+              "surface-bright": "#f9f9f9",
+              "on-primary-container": "#525151",
+              "primary-fixed": "#e5e2e1",
+              "surface-dim": "#d4dbdd",
+              "secondary": "#5b5f64",
+              "primary-dim": "#535252",
+              "on-background": "#2d3435",
+              "on-tertiary": "#f4faff",
+              "tertiary": "#486272",
+              "on-secondary": "#f6f9ff",
+              "surface-container-lowest": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0rem", "lg": "0rem", "xl": "0rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f9f9f9;
+            color: #2d3435;
+            font-family: 'Manrope', sans-serif;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2rem;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 h-20 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-xl">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-zinc-800 dark:text-zinc-200 cursor-pointer hover:opacity-60 transition-opacity duration-300 active:scale-95 transition-transform" data-icon="menu">menu</span>
+</div>
+<h1 class="text-xl font-serif tracking-[0.2em] text-zinc-900 dark:text-zinc-100 uppercase">GALLERY</h1>
+<nav class="hidden md:flex gap-12">
+<a class="text-zinc-900 dark:text-zinc-100 font-medium font-serif italic tracking-tight hover:opacity-60 transition-opacity duration-300" href="#">Works</a>
+<a class="text-zinc-500 dark:text-zinc-400 font-serif italic tracking-tight hover:opacity-60 transition-opacity duration-300" href="#">Archive</a>
+<a class="text-zinc-500 dark:text-zinc-400 font-serif italic tracking-tight hover:opacity-60 transition-opacity duration-300" href="#">Contact</a>
+</nav>
+<div class="w-6 md:hidden"></div> <!-- Spacer for mobile symmetry -->
+</header>
+<main class="pt-32 pb-24 px-8 max-w-[1600px] mx-auto">
+<!-- Intro Section -->
+<section class="mb-24 flex flex-col md:flex-row justify-between items-baseline gap-8">
+<div class="max-w-2xl">
+<h2 class="text-5xl md:text-7xl font-headline italic tracking-tighter leading-tight text-on-surface">
+                    Capturing the <span class="text-primary-dim">chromatic resonance</span> of the everyday.
+                </h2>
+</div>
+<div class="flex flex-col gap-2 text-right">
+<p class="font-label text-[10px] tracking-[0.3em] uppercase text-on-surface-variant">CURATED SELECTION</p>
+<p class="font-label text-[10px] tracking-[0.3em] uppercase text-on-surface-variant">2023 — 2024</p>
+</div>
+</section>
+<!-- Gallery Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-y-32 md:gap-y-48 items-start">
+<!-- Hero Image 1: Landscape (Large, Left) -->
+<div class="col-span-1 md:col-span-8 group cursor-crosshair">
+<div class="overflow-hidden bg-surface-container">
+<img class="w-full h-auto grayscale-0 group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="vibrant pink and orange sunset over a reflective mountain lake with jagged peaks and crystal clear water" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRDSau_KFnI_IAoimI_f7go0Dj-BZZnIjAYsNL2qP-3LTEjKDZP6PfXWDSLEdNWHWuqvclVO468dgMSu4KjyB1B6nxZtjppSfj9OXzsbhzIPRQFM1V0joJsZdMRe9Yt0PRwORDQgJE4pAx9ven3xElYuSSZGGKNlRkEzI8rVDT-thB-ZwwmQ1uc7R2aCg8KAvpEIQ4fvdURypMcjdhIQEAnZo-NCdzAv2V9wPDQDL4Ti-I7IIaWbVJ_-kOvOB_wanUYhH86b8l4zA"/>
+</div>
+<div class="mt-6 flex justify-between items-baseline">
+<p class="font-label text-[10px] tracking-widest uppercase text-outline">001 / ALPS AT DUSK</p>
+<p class="font-headline italic text-sm text-on-surface-variant">46.8182° N, 8.2275° E</p>
+</div>
+</div>
+<!-- Image 2: Vertical Architecture (Right, Offset) -->
+<div class="col-span-1 md:col-start-10 md:col-span-3 mt-12 md:mt-64 group cursor-crosshair">
+<div class="overflow-hidden bg-surface-container">
+<img class="w-full aspect-[4/5] object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="high contrast architectural shot of a modern skyscraper reflecting deep blue sky with sharp geometric glass angles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4cD2KMlTaobuCawHPWzSw2QP9lfsW2S5VnqPgwLRBu0U-YT7AiN55uS-L8uo7bOTLJ29Pr1Q-F97dJmytjC81fL2C_3dpkbEd_56NDFk9XG2QzRqeb_lb707uHtMXZyV-VJcFBALqu-ADf79q9Gp0Z8jm7IKbCPdvUenbQsNfSsEv2PGzfwzMxyqphblcx869PXtoHfQeW5j6Nyxsxw3LLZWCgShUnnuO2gklJtOOb9S6jcP-srpnLklc-loB0uW4QNT39O-i7lI"/>
+</div>
+<div class="mt-6">
+<p class="font-label text-[10px] tracking-widest uppercase text-outline">002 / GLASS MONolith</p>
+</div>
+</div>
+<!-- Image 3: Street (Small, Left Offset) -->
+<div class="col-span-1 md:col-start-2 md:col-span-4 group cursor-crosshair">
+<div class="overflow-hidden bg-surface-container">
+<img class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="street scene in Tokyo at night with neon signs in vibrant magenta and blue reflecting on wet asphalt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC24-SB9ePxu_S3Ul2dZbymJE1a1-5qnstEGp7B9HcweEynwQyeJZmLH878SwQIJnfQ9UoIgVxFPiTk0lU8PsB9P_uUh0vZ97rjbN2Hy773ucFeNMgyqdSDHutOG77j77xBEfCmbAmaaNykT7lLbSzjGV8JzKl3xtmjQqFmLJq-3AWo-PgXgNb7lGrJsbnbKZSoLBmasZhiTCVOv8m7FXwXUrseW5DWhN3atik5l0w0g2ayKIN_ckkGgMzF46QtKyPP2IZF77dLbDg"/>
+</div>
+<div class="mt-6">
+<p class="font-label text-[10px] tracking-widest uppercase text-outline">003 / NEON RAIN</p>
+</div>
+</div>
+<!-- Image 4: Landscape (Wide, Full Width bleed potential) -->
+<div class="col-span-1 md:col-start-1 md:col-span-12 mt-12 group cursor-crosshair">
+<div class="overflow-hidden bg-surface-container">
+<img class="w-full h-[530px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="enchanting forest with sunlight streaming through vibrant green leaves and mossy ground in a cinematic style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYTEVAj8jaaX0avIWxuDy4G1A8XgCHTQxTxoxnv9mA4eJGvOvKWXufwvs7RXSbQFkok0FceUzv5muxEEKiEVgW6zxu9kcqKrD2Bpw-N44NXtt9igMWhjOV3OnDjiiqe681Nb_3V2DPpxRbC5r2UtnfE1i4y05jYapuPMQX1T6f2h3viKLW-yqBeXrHhewYqPC1WM3cxmQuMbwFJx9wqx-gkNSUW8fErZzkbgw7XBqf1TQtEowaTox06MCQwVWTyDdDJpR0VAd5UeI"/>
+</div>
+<div class="mt-8 flex flex-col md:flex-row justify-between items-start gap-4">
+<h3 class="text-3xl font-headline italic tracking-tight text-on-surface">The Silence of the Canopy</h3>
+<div class="max-w-xs">
+<p class="text-xs font-body text-on-surface-variant leading-relaxed">
+                            A study on light filtration through dense foliage. Captured at midday when the sun reaches its zenith.
+                        </p>
+</div>
+</div>
+</div>
+<!-- Image 5: Architecture (Centered) -->
+<div class="col-span-1 md:col-start-4 md:col-span-6 group cursor-crosshair">
+<div class="overflow-hidden bg-surface-container">
+<img class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="minimalist brutalist architecture with stark concrete walls and bright orange geometric staircase accent" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCANNIFg1aWi4YpaGELov8Cg2jLmqtDgo2A9PzDoJkJEUmu88WaddQhSGvHjy7UDmUDBAVTTVVRDubqWzPETOO0RPD7jwMiDQUv5EUfLKILk-9mdFuJV74cFmNRyzms1pAJfldRNP76eNem8gWz1KDC6hKVbQEm8U_sXUgjaEfoS9fO90JaI8DkDblyuSfXJST0Oz3gMHMW2U3WMdFI4ehibM_ezno_tOoXScoCfsY5sg3XnTQHpPxIWw0-WDGm0n-kbj5OlXN6MHw"/>
+</div>
+<div class="mt-6 flex justify-between items-center">
+<p class="font-label text-[10px] tracking-widest uppercase text-outline">004 / CONCRETE VOID</p>
+<span class="material-symbols-outlined text-outline" style="font-variation-settings: 'FILL' 1;">camera</span>
+</div>
+</div>
+<!-- Image 6: Street (Right, Vertical) -->
+<div class="col-span-1 md:col-start-2 md:col-span-3 group cursor-crosshair">
+<div class="overflow-hidden bg-surface-container">
+<img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="macro shot of colorful market spices in Morocco with deep reds oranges and yellows in textured piles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7igAoAg4w7W9OHNVnISgslw9V5p6RRJqBlKLWpM2vPnW7EHxmnpz06LT_MNrLjTzomrdeQVWUP-ltHXhvlo7SreR98Cosmm2F0vn8WHIlX_ap7v8CFQLEy4zgA0B6fuSwlTLyxdrM1CE_RCuUvPN9fS9-mTg-AotW37HyogCuWIKptRMDSn0IlEGRhZ_riZ50YtHMh-dvl4t18wPljQIq-kGQeFCFYmvLVNb8tZLeVH97U9uJVD0gumt6repJ4BtKuGR6G30iw2A"/>
+</div>
+<div class="mt-6">
+<p class="font-label text-[10px] tracking-widest uppercase text-outline">005 / SPICE TEXTURES</p>
+</div>
+</div>
+<!-- Image 7: Landscape (Large, Right) -->
+<div class="col-span-1 md:col-start-6 md:col-span-7 group cursor-crosshair">
+<div class="overflow-hidden bg-surface-container">
+<img class="w-full h-auto group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="vast golden sand dunes of the Sahara at sunset with deep indigo shadows and glowing orange crests" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeSNC5dLEqyQDA3jtisZlGhNNxSgelKS-BmbFDmxfR2VWWzPmsaFhf2jq3maV1cSzJmNm72ZlIHGOm54f59U_Okg943RnsdxuzPGEUgj-57f2wMy_F_gC4sqf_7429XfzWKwMR7ut5Klq-j4iPUD1VVL30A39cGo4T2mdL5V3pb2qVpcuhukoYnX1U43XUFmaoP6crOdR33Q3zaCMjoC-2TzWm0jkGegBB2cWP-8qj1ui2vbUnCUM_5k_OIkgy7AMSiG0oCjtPX_Y"/>
+</div>
+<div class="mt-6">
+<p class="font-label text-[10px] tracking-widest uppercase text-outline">006 / DESERT RHYTHM</p>
+</div>
+</div>
+</div>
+<!-- Pagination/Navigation -->
+<div class="mt-48 flex justify-center">
+<button class="px-16 py-6 border border-outline-variant/20 font-label text-[10px] tracking-[0.3em] uppercase hover:bg-on-surface hover:text-surface transition-all duration-500">
+                Load More Archive
+            </button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 flex flex-col md:flex-row justify-between items-center gap-8 bg-zinc-100 dark:bg-zinc-900 border-t-0">
+<div class="flex flex-col items-center md:items-start gap-2">
+<p class="font-sans text-[10px] tracking-widest uppercase text-zinc-600 dark:text-zinc-400">© 2024 PHOTOGRAPHER NAME</p>
+<p class="font-sans text-[8px] tracking-[0.2em] text-zinc-400 uppercase">Shot on Leica M11 &amp; Sony A7R V</p>
+</div>
+<div class="flex gap-12">
+<a class="font-sans text-[10px] tracking-widest uppercase text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-300" href="#">Instagram</a>
+<a class="font-sans text-[10px] tracking-widest uppercase text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-300" href="#">Twitter</a>
+<a class="font-sans text-[10px] tracking-widest uppercase text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-300" href="#">Are.na</a>
+</div>
+<div class="md:text-right">
+<a class="font-sans text-[10px] tracking-widest uppercase text-zinc-900 dark:text-zinc-100 border-b border-zinc-900" href="#">Back to Top</a>
+</div>
+</footer>
+</body></html>

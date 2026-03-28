@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="UI placeholder">
+  <defs>
+    <linearGradient id="u1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="#020617"/>
+  <rect x="80" y="80" width="1120" height="560" rx="32" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
+  <rect x="120" y="120" width="360" height="480" rx="20" fill="url(#u1)" opacity="0.2"/>
+  <rect x="520" y="140" width="640" height="48" rx="12" fill="#1e293b"/>
+  <rect x="520" y="220" width="640" height="160" rx="16" fill="#1e293b"/>
+  <rect x="520" y="420" width="300" height="180" rx="16" fill="#1e293b"/>
+  <rect x="860" y="420" width="300" height="180" rx="16" fill="#1e293b"/>
+</svg>

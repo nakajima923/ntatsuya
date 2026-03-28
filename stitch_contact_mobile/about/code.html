@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-primary": "#ffffff",
+              "outline-variant": "#adb3b4",
+              "tertiary-container": "#d0ecff",
+              "surface": "#f9f9f9",
+              "surface-container-high": "#e4e9ea",
+              "surface-container": "#ebeeef",
+              "inverse-surface": "#0c0f0f",
+              "surface-tint": "#5f5e5e",
+              "tertiary-fixed-dim": "#c2def0",
+              "on-tertiary-fixed": "#2c4655",
+              "on-secondary-fixed": "#3c4044",
+              "surface-container-low": "#f2f4f4",
+              "on-secondary-fixed-variant": "#585c61",
+              "on-error-container": "#752121",
+              "error-dim": "#4e0309",
+              "surface-variant": "#dde4e5",
+              "on-error": "#fff7f6",
+              "tertiary-fixed": "#d0ecff",
+              "on-surface": "#2d3435",
+              "outline": "#757c7d",
+              "secondary-dim": "#4f5358",
+              "surface-container-highest": "#dde4e5",
+              "primary": "#5f5e5e",
+              "primary-container": "#e5e2e1",
+              "secondary-container": "#dfe3e8",
+              "on-tertiary-fixed-variant": "#486272",
+              "inverse-on-surface": "#9c9d9d",
+              "error-container": "#fe8983",
+              "on-primary": "#faf7f6",
+              "on-tertiary-container": "#3e5868",
+              "secondary-fixed-dim": "#d1d5da",
+              "on-secondary-container": "#4e5257",
+              "primary-fixed-dim": "#d6d4d3",
+              "secondary-fixed": "#dfe3e8",
+              "on-primary-fixed": "#403f3f",
+              "on-primary-fixed-variant": "#5c5b5b",
+              "background": "#f9f9f9",
+              "on-surface-variant": "#5a6061",
+              "tertiary-dim": "#3c5666",
+              "error": "#9f403d",
+              "surface-bright": "#f9f9f9",
+              "on-primary-container": "#525151",
+              "primary-fixed": "#e5e2e1",
+              "surface-dim": "#d4dbdd",
+              "secondary": "#5b5f64",
+              "primary-dim": "#535252",
+              "on-background": "#2d3435",
+              "on-tertiary": "#f4faff",
+              "tertiary": "#486272",
+              "on-secondary": "#f6f9ff",
+              "surface-container-lowest": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #f9f9f9;
+            color: #2d3435;
+            -webkit-font-smoothing: antialiased;
+        }
+        .serif-display {
+            font-family: 'Noto Serif', serif;
+        }
+        .glass-nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 h-20 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-xl transition-all">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-zinc-800 dark:text-zinc-200 cursor-pointer hover:opacity-60 transition-opacity">menu</span>
+<span class="text-xl font-serif tracking-[0.2em] text-zinc-900 dark:text-zinc-100 uppercase">GALLERY</span>
+</div>
+<nav class="hidden md:flex gap-12 items-center">
+<a class="text-zinc-500 dark:text-zinc-400 font-label text-[10px] tracking-widest uppercase hover:opacity-60 transition-opacity" href="#">Work</a>
+<a class="text-zinc-900 dark:text-zinc-100 font-medium font-label text-[10px] tracking-widest uppercase hover:opacity-60 transition-opacity" href="#">About</a>
+<a class="text-zinc-500 dark:text-zinc-400 font-label text-[10px] tracking-widest uppercase hover:opacity-60 transition-opacity" href="#">Exhibitions</a>
+<a class="text-zinc-500 dark:text-zinc-400 font-label text-[10px] tracking-widest uppercase hover:opacity-60 transition-opacity" href="#">Journal</a>
+</nav>
+<div class="w-10"></div> <!-- Spacer for balance -->
+</header>
+<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+<!-- Hero Section: Asymmetrical Portrait -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+<div class="md:col-span-7 lg:col-span-6">
+<div class="relative aspect-[4/5] bg-surface-container overflow-hidden group">
+<img alt="Photographer Portrait" class="w-full h-full object-cover grayscale brightness-95 group-hover:scale-105 transition-transform duration-1000" data-alt="Modern close-up portrait of a photographer in a black turtleneck, soft natural window light, cinematic shadows, minimalist studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC2TM7V_G_YAEvPGc-5CNT4ZeHnQ9Ccq6L9XS06c4iKjq4iRddeCQOvJgNXwF2WwmPq24mgoMJxtBPlufrZtd1tZUJGEupjC2-enKUITJonLeyGLbOmBjp1dSwtA_EfcslekztKoWjZ-Tx1-dWqC8-54D-FDHx6fad7a1LCLeeXpFxIpyHMJe2S4yWTzVJ_vPS_D6MsC61xV2gVq9ssXifSdbWtgKAJfrFnCkELVtjsQYADB9JLzunNprANxGBm7Skalk7SWBbSp4"/>
+</div>
+</div>
+<div class="md:col-span-5 lg:col-span-6 flex flex-col pt-12">
+<span class="font-label text-[10px] tracking-[0.3em] uppercase text-on-surface-variant mb-4">The Visionary</span>
+<h1 class="serif-display text-6xl md:text-8xl italic font-light tracking-tighter text-on-surface mb-8">
+                    Julian <br/>Vane.
+                </h1>
+<div class="max-w-md">
+<p class="font-body text-lg leading-relaxed text-on-surface-variant mb-8">
+                        Specializing in high-contrast architectural studies and the silent narratives of urban landscapes. Based in London, working globally to document the tension between geometry and human transience.
+                    </p>
+<div class="flex flex-col gap-2">
+<span class="font-label text-[10px] tracking-widest uppercase text-outline-variant">Email</span>
+<a class="text-xl font-body border-b border-outline-variant/20 pb-1 hover:border-primary transition-colors inline-block w-fit" href="mailto:studio@julianvane.com">studio@julianvane.com</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Achievements Section: Editorial Tension -->
+<section class="mt-40 grid grid-cols-1 md:grid-cols-12 gap-8">
+<div class="md:col-span-4">
+<h2 class="serif-display text-4xl italic mb-12">Selected <br/>Recognition</h2>
+</div>
+<div class="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-x-16 gap-y-12">
+<div class="space-y-4">
+<span class="font-label text-[10px] tracking-widest text-outline-variant">2023</span>
+<h3 class="font-body font-medium text-lg">Aperture Portfolio Prize</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Recognized for 'The Brutalist Dream' series, exploring post-war European architecture.</p>
+</div>
+<div class="space-y-4">
+<span class="font-label text-[10px] tracking-widest text-outline-variant">2021</span>
+<h3 class="font-body font-medium text-lg">Sony World Photography Awards</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">First place in the Architecture category for 'Linear Shadows'.</p>
+</div>
+<div class="space-y-4">
+<span class="font-label text-[10px] tracking-widest text-outline-variant">2019</span>
+<h3 class="font-body font-medium text-lg">IPA Professional Photographer</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Honorable mention for editorial landscape photography.</p>
+</div>
+<div class="space-y-4">
+<span class="font-label text-[10px] tracking-widest text-outline-variant">2018</span>
+<h3 class="font-body font-medium text-lg">Magnum Photography Awards</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Finalist for 'The Gray Scale', a study of morning fog in Nordic cities.</p>
+</div>
+</div>
+</section>
+<!-- Exhibitions: Tonal Layering -->
+<section class="mt-40 bg-surface-container py-24 -mx-8 px-8">
+<div class="max-w-7xl mx-auto">
+<span class="font-label text-[10px] tracking-[0.4em] uppercase text-outline-variant block mb-12">Past &amp; Present Exhibitions</span>
+<div class="space-y-0">
+<!-- Exhibition Item -->
+<div class="group flex flex-col md:flex-row justify-between items-start md:items-center py-10 border-b border-outline-variant/10 hover:bg-surface-container-high transition-colors px-4 -mx-4">
+<div class="flex flex-col md:flex-row gap-8 md:items-center">
+<span class="font-body text-2xl font-light serif-display italic min-w-[120px]">2024</span>
+<div class="flex flex-col">
+<h4 class="font-body text-xl font-medium">Silent Monologue</h4>
+<p class="font-body text-sm text-on-surface-variant">The Photographers' Gallery, London</p>
+</div>
+</div>
+<span class="mt-4 md:mt-0 font-label text-[10px] tracking-widest text-outline-variant uppercase">Solo Exhibition</span>
+</div>
+<!-- Exhibition Item -->
+<div class="group flex flex-col md:flex-row justify-between items-start md:items-center py-10 border-b border-outline-variant/10 hover:bg-surface-container-high transition-colors px-4 -mx-4">
+<div class="flex flex-col md:flex-row gap-8 md:items-center">
+<span class="font-body text-2xl font-light serif-display italic min-w-[120px]">2022</span>
+<div class="flex flex-col">
+<h4 class="font-body text-xl font-medium">Forms of Concrete</h4>
+<p class="font-body text-sm text-on-surface-variant">Bauhaus Archive, Berlin</p>
+</div>
+</div>
+<span class="mt-4 md:mt-0 font-label text-[10px] tracking-widest text-outline-variant uppercase">Group Showcase</span>
+</div>
+<!-- Exhibition Item -->
+<div class="group flex flex-col md:flex-row justify-between items-start md:items-center py-10 border-b border-outline-variant/10 hover:bg-surface-container-high transition-colors px-4 -mx-4">
+<div class="flex flex-col md:flex-row gap-8 md:items-center">
+<span class="font-body text-2xl font-light serif-display italic min-w-[120px]">2021</span>
+<div class="flex flex-col">
+<h4 class="font-body text-xl font-medium">Urban Solitude</h4>
+<p class="font-body text-sm text-on-surface-variant">MoMA PS1, New York</p>
+</div>
+</div>
+<span class="mt-4 md:mt-0 font-label text-[10px] tracking-widest text-outline-variant uppercase">Selection</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA / Final Thought -->
+<section class="mt-40 text-center max-w-2xl mx-auto">
+<h2 class="serif-display text-4xl italic mb-8">Capturing the unseen breath of the city.</h2>
+<p class="font-body text-on-surface-variant mb-12">Available for select commissions, editorial assignments, and fine art print inquiries.</p>
+<button class="bg-primary text-on-primary px-12 py-5 text-[11px] font-label tracking-[0.3em] uppercase hover:bg-primary-dim transition-all active:scale-95">
+                Request a Portfolio
+            </button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 flex flex-col md:flex-row justify-between items-center gap-8 bg-zinc-100 dark:bg-zinc-900">
+<div class="flex flex-col gap-2 items-center md:items-start">
+<span class="font-sans text-[10px] tracking-widest uppercase text-zinc-600 dark:text-zinc-400">© 2024 JULIAN VANE PHOTOGRAPHY</span>
+<span class="font-sans text-[9px] tracking-widest uppercase text-zinc-400">All rights reserved.</span>
+</div>
+<div class="flex gap-12">
+<a class="font-sans text-[10px] tracking-widest uppercase text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-300" href="#">Instagram</a>
+<a class="font-sans text-[10px] tracking-widest uppercase text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-300" href="#">Twitter</a>
+<a class="font-sans text-[10px] tracking-widest uppercase text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-300 border-b border-zinc-900" href="#">Are.na</a>
+</div>
+</footer>
+</body></html>

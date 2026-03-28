@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Edge placeholder">
+  <rect width="1280" height="720" fill="#020617"/>
+  <g opacity="0.9">
+    <path d="M80 520 L400 200 L720 520 Z" fill="none" stroke="#38bdf8" stroke-width="4"/>
+    <path d="M520 520 L840 200 L1160 520 Z" fill="none" stroke="#a78bfa" stroke-width="4"/>
+    <circle cx="400" cy="520" r="10" fill="#38bdf8"/>
+    <circle cx="720" cy="520" r="10" fill="#38bdf8"/>
+    <circle cx="840" cy="520" r="10" fill="#a78bfa"/>
+    <circle cx="1160" cy="520" r="10" fill="#a78bfa"/>
+  </g>
+  <rect x="200" y="120" width="880" height="120" rx="20" fill="#0f172a" stroke="#334155"/>
+  <text x="240" y="200" fill="#e2e8f0" font-family="ui-sans-serif, system-ui" font-size="42" font-weight="600">Edge</text>
+</svg>

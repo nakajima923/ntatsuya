@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* stitch_contact_mobile + aperture_ink/DESIGN.md のトークン */
+@theme inline {
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-noto-serif), ui-serif, Georgia, serif;
+
+  --color-surface: #f9f9f9;
+  --color-on-surface: #2d3435;
+  --color-on-surface-variant: #5a6061;
+  --color-primary: #5f5e5e;
+  --color-primary-dim: #535252;
+  --color-on-primary: #faf7f6;
+  --color-primary-container: #e5e2e1;
+  --color-on-primary-container: #525151;
+  --color-outline: #757c7d;
+  --color-outline-variant: #adb3b4;
+  --color-surface-container: #ebeeef;
+  --color-surface-container-low: #f2f4f4;
+  --color-surface-container-high: #e4e9ea;
+  --color-surface-container-highest: #dde4e5;
+  --color-surface-container-lowest: #ffffff;
+  --color-inverse-surface: #0c0f0f;
+}
+
+:root {
+  --background: #f9f9f9;
+  --foreground: #2d3435;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+}
