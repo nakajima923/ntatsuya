@@ -10,7 +10,7 @@ export default function SiteLayout({
   return (
     <div className="flex min-h-full flex-col bg-surface text-on-surface">
       <SiteHeader />
-      <main className="flex-1">{children}</main>
+      <main className="flex-1 pt-16 md:pt-[4.5rem]">{children}</main>
       <SiteFooter />
       <ScrollToTopButton />
     </div>

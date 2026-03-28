@@ -39,3 +39,57 @@ body {
   background-color: var(--color-primary-container);
   color: var(--color-on-primary-container);
 }
+
+/**
+ * 固定ヘッダー用。relative だと背面にコンテンツが無く半透明が見えないため fixed と併用。
+ * Safari 向けに -webkit-backdrop-filter を明示。
+ */
+.site-header-glass {
+  background-color: rgba(255, 255, 255, 0.34);
+  -webkit-backdrop-filter: blur(22px) saturate(1.2);
+  backdrop-filter: blur(22px) saturate(1.2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header-motion {
+    transition: none !important;
+  }
+}
+
+@keyframes mobile-drawer-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes mobile-drawer-backdrop-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.mobile-drawer-backdrop {
+  animation: mobile-drawer-backdrop-in 0.22s ease-out forwards;
+}
+
+.mobile-drawer-panel {
+  animation: mobile-drawer-in 0.32s cubic-bezier(0.32, 0.72, 0, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobile-drawer-backdrop,
+  .mobile-drawer-panel {
+    animation: none;
+  }
+
+  .mobile-drawer-panel {
+    transform: translateX(0);
+  }
+}
+

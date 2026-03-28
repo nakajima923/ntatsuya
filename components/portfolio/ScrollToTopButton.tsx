@@ -8,8 +8,8 @@ function ChevronUpIcon({ className }: { className?: string }) {
   return (
     <svg
       className={className}
-      width="18"
-      height="18"
+      width="20"
+      height="20"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -51,7 +51,7 @@ export function ScrollToTopButton() {
     <button
       type="button"
       onClick={goTop}
-      className="fixed bottom-5 right-4 z-40 flex h-11 w-11 items-center justify-center rounded-full border border-outline-variant/25 bg-white/70 text-zinc-800 shadow-sm backdrop-blur-md transition-colors hover:border-outline-variant/40 hover:bg-white/85 md:bottom-6 md:right-6"
+      className="fixed bottom-6 right-5 z-30 flex h-12 w-12 items-center justify-center rounded-full border border-outline-variant/25 bg-white/65 text-zinc-800 shadow-md backdrop-blur-md transition-colors hover:border-outline-variant/40 hover:bg-white/80 md:bottom-8 md:right-8"
       aria-label="ページ上部へ戻る"
     >
       <ChevronUpIcon />
