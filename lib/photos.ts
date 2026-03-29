@@ -1,13 +1,13 @@
 import type { Photo } from "@/types/photo";
 
 /**
- * 写真メタデータ。R2 ではキー例: `media/photos/sample-01.jpg`（公開 URL は assetUrl とベース URL で合成）。
+ * 写真メタデータ。R2 ではキー例: `media/photos/1.jpg`（公開 URL は assetUrl とベース URL で合成）。
  */
 export const photos: readonly Photo[] = [
   {
     id: "sample-01",
     title: "Coast",
-    src: "/media/photos/photo-01.svg",
+    src: "/media/photos/1.jpg",
     width: 1800,
     height: 1200,
     alt: "Sunrise on the coast",
@@ -20,7 +20,7 @@ export const photos: readonly Photo[] = [
   {
     id: "sample-02",
     title: "Alley",
-    src: "/media/photos/photo-02.svg",
+    src: "/media/photos/2.jpg",
     width: 1200,
     height: 1800,
     alt: "A street lamp in an alley",
