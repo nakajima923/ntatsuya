@@ -11,7 +11,7 @@ export default function ContactPage() {
   const formUrl = getGoogleFormEmbedUrl();
 
   return (
-    <div className="mx-auto max-w-6xl px-6 pb-16 pt-8 md:px-8 md:pt-10">
+    <div className="mx-auto max-w-6xl px-6 pb-16 pt-6 md:px-8 md:pt-8">
       <div className="grid grid-cols-1 gap-16 lg:grid-cols-12 lg:gap-20">
         <div className="flex flex-col justify-between lg:col-span-5">
           <div>

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function GalleryPage() {
   return (
-    <div className="mx-auto max-w-[1600px] px-6 pb-20 pt-6 md:px-8 md:pt-8">
+    <div className="mx-auto max-w-[1920px] px-6 pb-20 pt-5 md:px-8 md:pt-6 lg:px-10 xl:px-12">
       <header className="mb-14 max-w-xl">
         <p className="font-sans text-[10px] tracking-[0.28em] text-on-surface-variant uppercase">
           Index
@@ -26,7 +26,7 @@ export default function GalleryPage() {
         </p>
       </header>
 
-      <ul className="grid list-none grid-cols-1 gap-x-7 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+      <ul className="grid list-none grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-x-7 sm:gap-y-12 lg:grid-cols-2 lg:gap-x-10 lg:gap-y-14 2xl:grid-cols-3 2xl:gap-x-8 2xl:gap-y-12">
         {photos.map((photo) => (
           <li key={photo.id}>
             <Link
@@ -41,7 +41,7 @@ export default function GalleryPage() {
                     alt={photo.alt}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
-                    sizes="(max-width:640px)100vw,(max-width:1024px)50vw,33vw"
+                    sizes="(max-width:640px)100vw,(max-width:1024px)50vw,(max-width:1536px)50vw,33vw"
                     unoptimized
                   />
                 </div>

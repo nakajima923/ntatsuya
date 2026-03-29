@@ -34,7 +34,7 @@ export default function AboutPage() {
   const lastEn = sectionsEn.length - 1;
 
   return (
-    <div className="mx-auto max-w-4xl px-6 pb-24 pt-8 md:px-10 md:pt-10">
+    <div className="mx-auto max-w-4xl px-6 pb-24 pt-6 md:px-10 md:pt-8">
       <main id="container">
         <div className="textcontainer">
           <p className="name mb-12 border-b border-outline-variant/25 pb-8 font-serif text-3xl tracking-tight text-on-surface md:text-4xl">

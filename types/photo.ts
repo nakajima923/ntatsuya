@@ -4,6 +4,9 @@ export type Photo = {
   title: string;
   /** `/public` 配下 or フル URL（`assetUrl` 経由）。R2 では例: `media/photos/xxx.jpg` をベース URL に連結 */
   src: string;
+  /** 実画像のピクセル寸法（表示時の縦横比用。置き換え時は実ファイルに合わせる） */
+  width: number;
+  height: number;
   alt: string;
   /** 機材（短めの表記推奨） */
   camera: string;

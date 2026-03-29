@@ -1,18 +1,13 @@
 import type { Metadata } from "next";
-import { Manrope, Noto_Serif_JP } from "next/font/google";
+import { Noto_Sans_JP } from "next/font/google";
 
 import "./globals.css";
 
-const manrope = Manrope({
-  variable: "--font-manrope",
+const notoSansJp = Noto_Sans_JP({
+  variable: "--font-noto-sans-jp",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
-});
-
-const notoSerifJp = Noto_Serif_JP({
-  variable: "--font-noto-serif",
-  subsets: ["latin"],
-  weight: ["200", "400", "600"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -30,10 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="ja"
-      className={`${manrope.variable} ${notoSerifJp.variable} h-full antialiased`}
-    >
+    <html lang="ja" className={`${notoSansJp.variable} h-full antialiased`}>
       <body className="min-h-full min-h-[100dvh] flex flex-col">{children}</body>
     </html>
   );

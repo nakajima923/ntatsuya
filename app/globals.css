@@ -2,8 +2,9 @@
 
 /* stitch_contact_mobile + aperture_ink/DESIGN.md のトークン */
 @theme inline {
-  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-noto-serif), ui-serif, Georgia, serif;
+  /* サイト全体を Noto Sans JP に統一（font-sans / font-serif とも同一ファミリー） */
+  --font-sans: var(--font-noto-sans-jp), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-noto-sans-jp), ui-sans-serif, system-ui, sans-serif;
 
   --color-surface: #f9f9f9;
   --color-on-surface: #2d3435;
@@ -48,6 +49,13 @@ body {
   background-color: rgba(255, 255, 255, 0.34);
   -webkit-backdrop-filter: blur(22px) saturate(1.2);
   backdrop-filter: blur(22px) saturate(1.2);
+}
+
+/* トップ: 全面写真の上に載せる、より軽い半透明ガラス */
+.site-header-glass--home {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(18px) saturate(1.1);
+  backdrop-filter: blur(18px) saturate(1.1);
 }
 
 @media (prefers-reduced-motion: reduce) {

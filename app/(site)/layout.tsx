@@ -1,5 +1,6 @@
+import { ConditionalSiteFooter } from "@/components/portfolio/ConditionalSiteFooter";
+import { MainContent } from "@/components/portfolio/MainContent";
 import { ScrollToTopButton } from "@/components/portfolio/ScrollToTopButton";
-import { SiteFooter } from "@/components/portfolio/SiteFooter";
 import { SiteHeader } from "@/components/portfolio/SiteHeader";
 
 export default function SiteLayout({
@@ -8,10 +9,10 @@ export default function SiteLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex min-h-full flex-col bg-surface text-on-surface">
+    <div className="flex min-h-0 flex-1 flex-col bg-surface text-on-surface">
       <SiteHeader />
-      <main className="flex-1 pt-16 md:pt-[4.5rem]">{children}</main>
-      <SiteFooter />
+      <MainContent>{children}</MainContent>
+      <ConditionalSiteFooter />
       <ScrollToTopButton />
     </div>
   );
