@@ -1,5 +1,7 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
+	// `name` と services[].service は常に同一（Cloudflare の Worker スクリプト名と一致）。
+	// ほかに wrangler.toml / wrangler.json があるとそちらが優先され、ここが無視される。
 	"main": ".open-next/worker.js",
 	"name": "portfolio-ntatsuya",
 	"compatibility_date": "2026-03-17",

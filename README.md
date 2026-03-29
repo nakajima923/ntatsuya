@@ -23,9 +23,24 @@ npm run preview
 
 ## デプロイ
 
+ローカルやワンショットなら次でビルド＋デプロイまで一括でよい。
+
 ```bash
 npm run deploy
 ```
+
+### Cloudflare Workers（ビルドとデプロイが分かれている場合）
+
+`next build` だけでは `.open-next/` ができず、`npx wrangler deploy` が
+
+`Could not find compiled Open Next config` で止まる。**ビルド段階で OpenNext のビルドが必須**。
+
+| 段階 | コマンド例 |
+|------|------------|
+| ビルド | `npm run build:cloudflare`（中で `next build` も走る） |
+| デプロイ | `npx wrangler deploy` または `npx opennextjs-cloudflare deploy` |
+
+`npm run build` と `build:cloudflare` を両方指定すると `next build` が二重になるので、**ビルドは `build:cloudflare` のみ**にするのがおすすめ。
 
 ## メディア URL
 
