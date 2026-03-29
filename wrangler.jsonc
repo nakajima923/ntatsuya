@@ -25,5 +25,12 @@
 		// Enable image optimization
 		// see https://opennext.js.org/cloudflare/howtos/image
 		"binding": "IMAGES"
-	}
+	},
+	// 非公開 R2: `app/media/[...path]/route.ts` が `MEDIA_BUCKET` 経由で配信。ダッシュボードのバケット名に合わせて変更。
+	"r2_buckets": [
+		{
+			"binding": "MEDIA_BUCKET",
+			"bucket_name": "ntatsuya-media"
+		}
+	]
 }
