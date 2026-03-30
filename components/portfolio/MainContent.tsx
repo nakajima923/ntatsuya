@@ -13,8 +13,8 @@ export function MainContent({ children }: { children: ReactNode }) {
     <main
       className={
         isHome
-          ? "flex min-h-0 flex-1 flex-col pt-0"
-          : "flex min-h-0 flex-1 flex-col lg:pt-[4.5rem]"
+          ? "block w-full flex-1 pt-0"
+          : "block w-full flex-1 lg:pt-[4.5rem]"
       }
     >
       {!isHome ? <SiteBreadcrumbs /> : null}

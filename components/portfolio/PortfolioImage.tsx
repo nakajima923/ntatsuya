@@ -39,7 +39,7 @@ export function PortfolioImage({
         src={url}
         alt={alt}
         fill
-        sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+        sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw"
         className="object-cover"
         unoptimized
         priority={priority}
